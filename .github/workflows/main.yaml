@@ -46,9 +46,9 @@ jobs:
       run: |
         Rscript -e 'lintr::lint_package()'
  
-    - name: Run R Script
-      run: |
-        Rscript matrix.R 
+    #- name: Run R Script
+    #  run: |
+    #    Rscript matrix.R 
     - name:  Run CVE Scanning with Grype
       id: scan
       uses: anchore/scan-action@v3.6.4
